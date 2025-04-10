@@ -1,0 +1,15 @@
+layer=top
+background-color=#26233aee
+border-size=2
+border-color=#c4a7e7
+border-radius=8
+default-timeout=5000
+font=Cantarell 12
+#output=eDP-1
+
+[urgency=high]
+layer=overlay
+border-color=#eb6f92
+
+[mode=dnd]
+invisible=1
