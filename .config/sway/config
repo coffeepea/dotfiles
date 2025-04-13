@@ -33,32 +33,31 @@ input "1267:12486:ELAN1200:00_04F3:30C6_Touchpad" {
 
 # display
 
-set $mon eDP-1
-output $mon {
-  scale 1.25
+set $d_main eDP-1
+set $d_ext HDMI-A-1
+output $d_main {
+  #scale 1.25
+  pos 0 0
   bg /home/yamu/Pictures/Wallpaper/wallhaven-kxmz11_1920x1080.png fill
 }
 
-#set $mon HDMI-A-1
-#output eDP-1 {
-#  disable
-#}
-#output $mon {
-#  mode 1920x1080@120Hz
-#  bg /home/yamu/Pictures/Wallpaper/wallhaven-kxmz11_1920x1080.png fill
-#}
+output $d_ext {
+  mode 1920x1080@239.964Hz
+  pos 1920 0
+  bg /home/yamu/Pictures/Wallpaper/wallhaven-kxmz11_1920x1080.png fill
+}
 
 workspace {
-  $ws1  output $mon
-  $ws2  output $mon
-  $ws3  output $mon
-  $ws4  output $mon
-  $ws5  output $mon
-  $ws6  output $mon
-  $ws7  output $mon
-  $ws8  output $mon
-  $ws9  output $mon
-  $ws10 output $mon
+  $ws1  output $d_main
+  $ws2  output $d_main
+  $ws3  output $d_main
+  $ws4  output $d_main
+  $ws5  output $d_main
+  $ws6  output $d_ext
+  $ws7  output $d_ext
+  $ws8  output $d_ext
+  $ws9  output $d_ext
+  $ws10 output $d_ext
 }
 
 # sway options

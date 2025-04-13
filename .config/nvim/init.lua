@@ -225,7 +225,7 @@ lazy.setup({
   },
 
   -- Smooth scroll
-  'psliwka/vim-smoothie',
+  --'psliwka/vim-smoothie',
 
   -- Keymap preview
   { 'folke/which-key.nvim', opts = {} },
