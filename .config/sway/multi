@@ -1,0 +1,20 @@
+include "config"
+
+output $d_ext {
+  enable
+  mode 1920x1080@239.964Hz
+  bg $wallpaper fill
+}
+
+workspace {
+  $ws1  output $d_main
+  $ws2  output $d_main
+  $ws3  output $d_main
+  $ws4  output $d_main
+  $ws5  output $d_main
+  $ws6  output $d_ext
+  $ws7  output $d_ext
+  $ws8  output $d_ext
+  $ws9  output $d_ext
+  $ws10 output $d_ext
+}

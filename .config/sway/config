@@ -33,31 +33,17 @@ input "1267:12486:ELAN1200:00_04F3:30C6_Touchpad" {
 
 # display
 
-set $d_main eDP-1
+set $d_main eDP-2
 set $d_ext HDMI-A-1
+
+set $wallpaper /home/yamu/Pictures/Wallpapers/wallhaven-7pdvvy_1920x1080.png
+
 output $d_main {
-  #scale 1.25
-  pos 0 0
-  bg /home/yamu/Pictures/Wallpaper/wallhaven-kxmz11_1920x1080.png fill
+  scale 1.2
+  bg $wallpaper fill
 }
-
 output $d_ext {
-  mode 1920x1080@239.964Hz
-  pos 1920 0
-  bg /home/yamu/Pictures/Wallpaper/wallhaven-kxmz11_1920x1080.png fill
-}
-
-workspace {
-  $ws1  output $d_main
-  $ws2  output $d_main
-  $ws3  output $d_main
-  $ws4  output $d_main
-  $ws5  output $d_main
-  $ws6  output $d_ext
-  $ws7  output $d_ext
-  $ws8  output $d_ext
-  $ws9  output $d_ext
-  $ws10 output $d_ext
+  disable
 }
 
 # sway options
@@ -89,7 +75,7 @@ bar {
   modifier $mod
   height 18px
   position top
-  status_command while date +'bat: '$(cat /sys/class/power_supply/BAT0/capacity)'   %d/%m/%Y %H:%M '; do sleep 5; done
+  status_command while date +'bat: '$(cat /sys/class/power_supply/BAT1/capacity)'   %d/%m/%Y %H:%M '; do sleep 5; done
 
   colors {
     statusline #c4a7e7
