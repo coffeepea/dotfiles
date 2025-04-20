@@ -1,7 +1,12 @@
 include "config"
 
+output $d_main {
+  scale 1.2
+  pos 0 1080
+  bg $wallpaper fill
+}
 output $d_ext {
-  enable
+  pos 0 0
   mode 1920x1080@239.964Hz
   bg $wallpaper fill
 }

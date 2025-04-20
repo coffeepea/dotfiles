@@ -4,7 +4,6 @@ output $d_main {
   disable
 }
 output $d_ext {
-  enable
   mode 1920x1080@239.964Hz
   bg $wallpaper fill
 }

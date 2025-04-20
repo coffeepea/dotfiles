@@ -13,8 +13,8 @@ export MOZ_ENABLE_WAYLAND=1
 
 if [ "$1" == "ext" ]; then
     exec sway --unsupported-gpu -c ~/.config/sway/extern
-elif [ "$1" == "multi" ]; then
+elif [ "$1" == "mul" ]; then
     exec sway --unsupported-gpu -c ~/.config/sway/multi
 else
-    exec sway --unsupported-gpu
+    exec sway --unsupported-gpu -c ~/.config/sway/single
 fi

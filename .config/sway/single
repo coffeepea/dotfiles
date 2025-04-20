@@ -1,0 +1,9 @@
+include "config"
+
+output $d_main {
+  scale 1.2
+  bg $wallpaper fill
+}
+output $d_ext {
+  disable
+}
